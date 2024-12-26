@@ -35,7 +35,7 @@
     --margin-lg : 15px;
     --text-bold: 600;
     --scroll-bg: var(--scroll-bg);
-    --scroll-color: var(--scroll-color)
+    --scroll-color:  #b2b1b1;
 }
 
 [data-theme="light"] {
@@ -61,6 +61,7 @@
     --scroll-color: #a1a1a1;
     --highlight-text-color:  rgb(249, 249, 104);
     --icon-stroke: #a1a1a1 !important;
+    --scroll-color:  #c1c1c1;
 
 
 }
@@ -325,7 +326,7 @@ input{
 }
 .btn-reset, .nav-link,.es-icon, .icon-sm{
     /* color: var(--white-color); */
-    color:var(--white-color) !important;
+    /* color:var(--white-color) !important; */
     stroke:var(--gray-color) !important;
 }
 .btn-reset:hover, .nav-link:hover,.es-icon:hover, .icon-sm:hover, .icon-btn:hover{
@@ -337,7 +338,9 @@ input{
 /* .icon-btn:hover{
     background-color: var(--primary-color) !important;
 } */
-
+.layout-side-section, [data-page-route="Workspaces"] .layout-main .layout-main-section-wrapper {
+        scrollbar-color:var(--scrollbar-color) transparent !important;
+}
 
 #icon-small-message{
     color:var(--white-color) !important;
