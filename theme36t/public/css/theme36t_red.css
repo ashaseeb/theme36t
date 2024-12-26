@@ -329,7 +329,7 @@ input{
     /* color:var(--white-color) !important; */
     stroke:var(--gray-color) !important;
 }
-.btn-reset:hover, .nav-link:hover,.es-icon:hover, .icon-sm:hover, .icon-btn:hover{
+.btn-reset:hover, .nav-link:hover,.es-icon:hover, .icon-sm:hover, .icon-btn:hover, .btn.btn-default.ellipsis:hover {
     /* color: var(--white-color); */
     color:var(--white-color) !important;
     stroke:var(--white-color) !important;
