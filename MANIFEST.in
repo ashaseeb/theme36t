@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include theme36t *.css
+recursive-include theme36t *.csv
+recursive-include theme36t *.html
+recursive-include theme36t *.ico
+recursive-include theme36t *.js
+recursive-include theme36t *.json
+recursive-include theme36t *.md
+recursive-include theme36t *.png
+recursive-include theme36t *.py
+recursive-include theme36t *.svg
+recursive-include theme36t *.txt
+recursive-exclude theme36t *.pyc
