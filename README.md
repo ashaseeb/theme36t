@@ -7,7 +7,7 @@ https://frappecloud.com/marketplace/apps/theme36t
 
 ### To install this theme on dedicated servers
 
-bench get-app https://github.com/Midocean-Technologies/theme36t.git
+bench get-app https://github.com/ashaseeb/theme36t.git
 
 bench --site (sitename) install-app theme36t
 
