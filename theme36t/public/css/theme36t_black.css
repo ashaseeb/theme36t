@@ -197,6 +197,14 @@
     --text-bold: var(--text-bold-light) !important;
     
 }
+.ace_editor {
+    color: rgb(0, 0, 0);
+    background-color: var(--white-color);
+}
+.ace_editor .ace_selection {
+    background-color: var(--theme-orange-color); /* Gray background for the selected text */
+    color: rgb(0, 0, 0); /* Optional: Set text color when selected */
+  }
 
 .navbar{ /* Top Header */
     background: var(--navbar-background-color) !important;
