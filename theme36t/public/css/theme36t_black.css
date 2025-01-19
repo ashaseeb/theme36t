@@ -6,16 +6,17 @@
     --red-color: #ff0000;
     --gray-color: #888;
     --theme-orange-color: #fd651d;
+    --theme-orangelight-color: #fa9d2f;
     --timeline-item-background-color:#e3e3e3;
     --selection-background: #b5b5b5;
-    --selection-color: #000000;
+    --selection-color: #454545;
 
     --text-color-light: black;
     --text-color-dark: rgb(234, 234, 234);
     --primary-color-light: #000000;
-    --primary-color-dark: #e56f0e;
+    --primary-color-dark: var(--theme-orange-color);
     --background-color-light: #e3e3e3;
-    --background-color-dark: #b4b4b4;
+    --background-color-dark: #5f5f5f;
     --background-color-hover-light: #3e3e3e;
     --background-color-hover-dark: #3e3e3e;
     --secondary-color-light: #bababa;
@@ -34,7 +35,7 @@
     --avatar-frame-bg-light: #e0e0e0;
     --avatar-frame-bg-dark: #e0e0e0;
     --sidebar-select-color-light: #c1c1c1;
-    --sidebar-select-color-dark: #c1c1c1;
+    --sidebar-select-color-dark: var(--theme-orange-color);
     --awesomplete-hover-bg-light:  #a8a8a8;
     --awesomplete-hover-bg-dark:  #a8a8a8;
 
@@ -52,8 +53,8 @@
     --navbar-background-color-dark: #000000;
     --background-form-control-light: #eeeeee;
     --background-form-control-dark: #1d1d1d;
-    --background-form-control-focus-light: #fa9d2f;
-    --background-form-control-focus-dark: #fa9d2f;
+    --background-form-control-focus-light: var(--theme-orangelight-color);
+    --background-form-control-focus-dark: var(--theme-orangelight-color);
     --color-button-light: #ffffff;
     --color-button-dark: #ffffff;
     --bg-color-light: #dcdcdc;
@@ -66,11 +67,11 @@
     --scroll-color-dark: #c5c5c5;
     --scroll-bg-light: #e3e3e3;
     --scroll-bg-dark: #999999;
-    --highlight-text-color-light:  #fd651d;
-    --highlight-text-color-dark:  #fd651d;
-    --icon-stroke-light: #fd651d;
+    --highlight-text-color-light:  var(--theme-orange-color);
+    --highlight-text-color-dark:  var(--theme-orange-color);
+    --icon-stroke-light: var(--theme-orange-color);
     --icon-stroke-dark: #ffffff;
-    --disabled-control-bg-light: #c6c6c6;
+    --disabled-control-bg-light: rgb(198, 198, 198);
     --disabled-control-bg-dark: #282828;
     --disabled-text-color-light: #1d1d1d;
     --disabled-text-color-dark: #bebebe;
@@ -78,8 +79,8 @@
     --navbar-search-background-color-dark: rgb(61, 61, 61);
     --navbar-search-color-light: rgb(0, 0, 0);
     --navbar-search-color-dark: rgb(255, 255, 255);
-    --form-control-focus-background-light: rgba(255, 160, 10, 0.14);
-    --form-control-focus-background-dark: rgba(255, 160, 10, 0.14);
+    --form-control-focus-background-light: #dcdcdc;
+    --form-control-focus-background-dark: #4d4d4d;
     --icon-btn-background-color-light:rgb(162, 162, 162);
     --icon-btn-background-color-dark: rgb(88, 88, 88);
     --table-border-color-light:#bbbbbb;
@@ -88,6 +89,8 @@
     --table-heading-background-color-dark: #bababa;
     --grid-row-border-color-light: #bbbbbb;
     --grid-row-border-color-dark: #aeaeae;
+    --standard-sidebar-item-selected-color-light: var(--theme-orange-color);
+    --standard-sidebar-item-selected-color-dark: var(--white-color);
 
     --page-head-height: 80px;
     --navbar-height: 80px;
@@ -141,6 +144,7 @@
     --table-border-color: var(--table-border-color-dark) !important;
     --table-heading-background-color: var(--table-heading-background-color-dark) !important;
     --grid-row-border-color: var(--grid-row-border-color-dark) !important;
+    --standard-sidebar-item-selected-color: var(--standard-sidebar-item-selected-color-dark) !important;
 
 
 
@@ -190,6 +194,8 @@
     --table-border-color: var(--table-border-color-light) !important;
     --table-heading-background-color: var(--table-heading-background-color-light) !important;
     --grid-row-border-color: var(--grid-row-border-color-light) !important;
+    --standard-sidebar-item-selected-color: var(--standard-sidebar-item-selected-color-light) !important;
+
 
 
 
@@ -205,7 +211,6 @@
     background-color: var(--theme-orange-color); /* Gray background for the selected text */
     color: rgb(0, 0, 0); /* Optional: Set text color when selected */
   }
-
 .navbar{ /* Top Header */
     background: var(--navbar-background-color) !important;
     height: var(--navbar-height);
@@ -244,7 +249,7 @@
 }
 
 .desk-sidebar .standard-sidebar-item.selected .sidebar-item-label{
-    color:var(--theme-orange-color) !important;
+    color:var(--standard-sidebar-item-selected-color) !important;
     font-weight: 800 !important;
 }
 
@@ -272,12 +277,20 @@
     border: 1px solid var(--primary-color)!important;
     box-shadow: none;
     background: var(--background-form-control-focus) !important;
+    background-color: var(--background-form-control-focus) !important;
 }
+/* .input-with-feedback:hover, .form-control:hover, .ellipsis:hover, .level-item:hover,.input:hover{
+    outline: 0;
+    border: 1px solid var(--primary-color)!important;
+    box-shadow: none;
+    <!-- background-color:var(--theme-orangelight-color) !important; -->
+} */
 .like-disabled-input{
     background-color: var(--disabled-control-bg) !important;
     color: var(--disabled-text-color) !important;
     /* border: 1px solid var(--primary-color)!important; */
 }
+
 
 /* Table */
 .form-grid{
@@ -320,19 +333,19 @@
     scrollbar-color: var(--scroll-color) var(--scroll-bg);
 }
 .awesomplete .input-with-feedback {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color)  !important;
 }
 .form-control {
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color) !important;
 }
 .search-bar .awesomplete input {
-    background-color: var(--awesomplete-hover-bg)
+    background-color: var(--awesomplete-hover-bg) !important
 }
 .modal-backdrop{
     background-color: var(--modal-backdrop) !important;
 }
 .widget .widget-head .widget-title {
-    font-size: var(--text-base);
+    font-size: var(--text-base)  !important;
 }
 .comment-box .comment-input-header, .form-dashboard-section .section-head, .form-section .section-head, .head-title {
     font-size: var(--text-base);
@@ -498,7 +511,10 @@ header ul#navbar-breadcrumbs{
     margin-top: -8px;
 }
 header .form-control:focus{
-    background-color: var(--white-color) !important;
+    /* background-color: var(--white-color) !important; */
+    background: var(--background-form-control-focus) !important;
+    background-color: var(--background-form-control-focus) !important;
+
 }
 
 
