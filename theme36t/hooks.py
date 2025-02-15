@@ -17,8 +17,8 @@ app_include_css = "/assets/theme36t/css/theme36t_black.css"
 # app_include_js = "/assets/theme36t/js/theme36t.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/theme36t/css/theme36t.css"
-# web_include_js = "/assets/theme36t/js/theme36t.js"
+web_include_css = "/assets/theme36t/css/theme36t_black_web.css"
+web_include_js = "/assets/theme36t/js/theme36t.js"
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "theme36t/public/scss/website"

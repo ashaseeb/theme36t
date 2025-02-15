@@ -1,0 +1,50 @@
+
+/* WEBSITE THEME CHANGING HERE */
+.navbar-light{
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.navbar-brand, .navbar-brand img {
+    /* background: black !important;  */
+    height: var(80px) !important;
+    content: url('/files/i36T-webiste-Logo10.png') !important;
+    max-width: 300px !important;
+    max-height: 85px !important;
+}
+a:hover {
+    color:  #fd651d !important;
+}
+.page-card-head img {
+    content: url('/files/i36T-Circle-Logo35.png') !important;
+    max-height: 150px !important;
+}
+#page-login {
+    background: url('/files/i36T-Circle-Logo27-1.png') no-repeat center center !important;
+    background-size: 100%; /* Maintains aspect ratio and sets height to 80% of the viewport */
+    background-position: center center; /* Centers the image */
+    background-color: #ffffff; /* Optional: Background color for any empty space */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Apply styles to elements with href="/app/home" */
+/* [href="/app/home"] .app-icon .app-logo {
+    content: src('/files/i36T-Circle-Logo35.png') !important;
+} */
+
+img[src="/assets/erpnext/images/erpnext-logo-blue.png"],
+img[src="/assets/hrms/images/frappe-hr-logo.svg"],
+img[src="/assets/helpdesk/desk/favicon.svg"],
+img[src="/assets/insights/frontend/insights-logo.png"],
+img[src="/assets/builder/frontend/builder_logo.png"],
+img[src="/assets/healthcare/images/healthcare.svg"],
+img[src="/assets/lms/images/lms-logo.png"]
+{
+    visibility: hidden;
+}

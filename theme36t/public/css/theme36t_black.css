@@ -1,6 +1,9 @@
 /* Colours */
 :root {
     /*GLOBAL VERIABLES*/
+    --navbar-background-color: #000000;
+
+
     --white-color: #ffffff;
     --black-color: #000000;
     --red-color: #ff0000;
@@ -624,4 +627,16 @@ span.notifications-seen use,symbol#icon-small-down{
 .filter-button span.filter-icon svg.icon{
     stroke: var(--white-color);
 } */
+
+
+
+/* WEBSITE THEME CHANGING HERE */
+.navbar-brand img {
+    background: var(--navbar-background-color) !important;
+    height: var(--navbar-height);
+    content: url('/files/i36T-webiste-Logo10.png') !important; /* Replace with the new image URL */
+    /* max-width: 300px;
+    max-height: 65px; */
+}
+
 
