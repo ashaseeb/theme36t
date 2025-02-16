@@ -553,8 +553,10 @@ input{
     color:var(--gray-color) !important;
     stroke:var(--theme-orange-color) !important;
 }
-.btn-reset .dropdown-item{
-    color:var(--theme-orange-color) !important;
+
+/* .btn-reset .dropdown-item{ */
+.dropdown-item{
+    color:var(--black-color) !important;
     stroke:var(--theme-orange-color) !important;
     /* background-color: var(--theme-orange-color) ; */
 }
